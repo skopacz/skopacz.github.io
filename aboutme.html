@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>About Me</title>
+
+        <link href="portfolio.css" type="text/css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Libre+Franklin" rel="stylesheet">
+        <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+    </head>
+    
+    <body id="bodyaboutme">
+        <div class="gridwrapper">
+        <div class="header"><header>About Me</header></div>
+        <main id="mainaboutme">
+            <p class="bodyparagraph">Hello, my name is Sebastian Kopacz. I'm a junior year English student at the University of Massachusetts Amherst. I am working towards a certificate in <a href="http://www.umass.edu/pwtc/" class="textlink">PWTC</a>- Professional Writing and Technical Communication, as well as a minor in <a href="https://www.umass.edu/itprogram/itminor" class="textlink">Information Technology</a>.</p>
+            <p class="bodyparagraph"> I was born and raised in Worcester, Massachusetts, where I lived for the entirety of my life until I began college. I went to Worcester Technical High School, and learned electrical as a trade alongside my normal academic curriculum. As a current student of English and PWTC, I am seeking opportunities in technical writing, both internships and full time positions. 
+            </p>
+            <figure>
+            <img src="exercises/images/IMG_1254.jpg" alt="Dominic, Sebastian, and Krystian" class="avatar" height="370" width="370">
+            <figcaption>Sitting with my favorite twin nephews, Krystian and Dominic</figcaption></figure>
+
+
+            
+            </main>
+        <section class="nav">
+            <span class="vcenter2" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+            <div id="mySidenav" class="sidenav">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+              <a href="index.html" class="MenuLink">Home</a>
+              <a href="writingsamples.html" class="MenuLink">Writing Samples</a>
+              <a href="whoops.html" class="MenuLink">About Me</a>
+              <a href="resume.html" class="MenuLink">Resume</a>
+              <a href="contact.html" class="MenuLink">Contact</a>
+            </div>
+        </section>
+        </div>
+        
+        
+        <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+    </script>
+        
+    </body>
+</html>

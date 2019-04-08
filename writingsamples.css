@@ -1,0 +1,126 @@
+body {
+    font-family: 'Libre Franklin', sans-serif;
+    background: rgb(0,0,0);
+    background: radial-gradient(circle, rgba(0,0,0,1) 58%, rgba(58,118,158,1) 100%); }
+
+.header {
+    padding: 10px;
+    grid-area: header;
+    min-height: 90px;}
+
+header {
+    font-family: 'Libre Franklin', sans-serif;
+    color: #EEE;
+    text-align: center;
+    line-height: 90px;
+    font-size: 50px;
+    font-weight:  ; }
+
+main {
+    height: 570px;
+    grid-area: main;
+    /*background-color: #333333;
+    opacity: .5*/}
+
+
+.nav {
+    background-color: inherit;
+    padding: 10px;
+    grid-area: nav;
+    height:500;}
+
+footer {
+    font-family: inherit;
+    color: #EEE;
+    padding: 10px;
+    grid-area: footer;
+    height: 50px;
+    line-height: 50px;
+    font-size: 15px;}
+
+.gridwrapper {
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-auto-rows: minmax(125px, auto);
+    grid-gap: 10px;
+    grid-template-areas: 
+        "nav header blank"
+        "nav main blank"
+        "nav main blank"
+        "nav main blank"
+        "footer footer footer"; }
+
+.sidenav {
+    white-space:nowrap;
+    float: left;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #222;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px; }
+
+.sidenav a {
+  text-align: left;
+    padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s; }
+
+.sidenav a:hover {
+  color: #f1f1f1; }
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.vcenter2 {
+    font-family: inherit;
+    float: left;}
+
+.MenuLink {
+    font-family: inherit; }
+
+a.button:link {
+    font-size: 16pt;
+      color: #FFFFFF;
+      padding: 10px;
+      position: relative;
+      bottom: 10px;
+      right: 10px;
+      border-radius: 10px;
+      text-decoration:underline;} 
+
+a.button:visited {
+    font-size: 16pt;
+      color: #FFFFFF;
+      padding: 10px;
+      position: relative;
+      bottom: 10px;
+      right: 10px;
+      border-radius: 10px;
+      text-decoration:underline;} 
+
+a.button:active {
+      color: #FFFFFF; }
+
+p {
+    margin: 15px;
+    padding: 10px;
+    font-size: 14pt;}
